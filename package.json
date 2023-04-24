@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "eslint-webpack-plugin": "^4.0.1",
+    "html-webpack-plugin": "^5.5.1",
+    "husky": "^8.0.3",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3",
+    "webpack-merge": "^5.8.0"
+  },
+  "scripts": {
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "prepare": "husky install",
+    "lint": "eslint src",
+    "json-serv": "json-server --watch database.json"
+  },
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
